@@ -9,9 +9,13 @@
   "author": "João Pedro Mascena Fernandes",
   "dependencies": {
     "babel-cli": "^6.26.0",
+    "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
     "consign": "^0.1.6",
     "express": "^4.17.1",
+    "jwt-simple": "^0.5.6",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
     "sequelize": "^6.5.0",
     "sqlite3": "^5.0.2"
   }
