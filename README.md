@@ -1,6 +1,6 @@
 # NTask-API
 
-Criação de uma API REST com Node.js e o framework web Express, para uma aplicação de gerencimanto de tarefas
+Criação de uma API REST com Node.js e o framework web Express, para uma aplicação de gerencimanto de tarefas.
 
 ## Funcionalidades
 
@@ -21,5 +21,5 @@ npm start
 Em seu navegador, digite a seguinte url:
 
 ```
-http://localhost:3000/
+http://localhost:3000
 ```

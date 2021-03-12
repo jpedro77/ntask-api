@@ -26,7 +26,7 @@ module.exports = app => {
             const model = require(modelDir)(sequelize, Sequelize.DataTypes)
             db.models[model.name] = model
         })
-        console.log('db.models',db.models)
+        
         Object.keys(db.models).forEach(key => {
             db.models[key].options.classMethods.associate(db.models)
         })
