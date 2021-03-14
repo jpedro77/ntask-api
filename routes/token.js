@@ -1,4 +1,5 @@
 const jwt = require("jwt-simple")
+const bcrypt = require("bcrypt")
 
 module.exports = app => {
     const cfg = app.libs.config
@@ -8,10 +9,10 @@ module.exports = app => {
         if (req.body.email && req.body.password) {
             const email = req.body.email
             const password = req.body.password
-
+            
             Users.findOne({where: {email: email}})
                 .then(user => {
-                    if (Users.isPassword(user.password, password)) {
+                    if (Users.options.classMethods.isPassword(user.password, password)) {
                         const payload = {id: user.id}
                         res.json({
                             token: jwt.encode(payload, cfg.jwtSecret)

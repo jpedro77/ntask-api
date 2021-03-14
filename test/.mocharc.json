@@ -1,0 +1,11 @@
+{
+    "extension": ["js"],
+    "package": "../package.json",
+    "require": ["babel-core/register"],
+    "reporter": "spec",
+    "slow": 5000,
+    "recursive": true,
+    "file": ["test/helpers.js"],
+    "ui": "bdd",
+    "watch-files": ["test/**/*.js"]
+}

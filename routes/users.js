@@ -3,7 +3,7 @@ module.exports = app => {
 
     app.route("/users")
         .all(app.auth.authenticate())
-        get((req, res) => {
+        .get((req, res) => {
             Users.findByPk(req.user.id, {
                 attributes: ["id", "name", "email"]
             })
@@ -12,7 +12,7 @@ module.exports = app => {
                 res.status(412).json({msg: error.message})
             })
         })
-        .delete("/users/:id", (req, res) => {
+        .delete((req, res) => {
             Users.destroy({where: {id: req.user.id}})
                 .then(result => res.sendStatus(204))
                 .catch(error => {
