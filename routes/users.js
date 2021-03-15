@@ -1,7 +1,7 @@
 module.exports = app => {
     const Users = app.db.models.Users
 
-    app.route("/users")
+    app.route("/user")
         .all(app.auth.authenticate())
         .get((req, res) => {
             Users.findByPk(req.user.id, {

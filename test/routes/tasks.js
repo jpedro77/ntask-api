@@ -6,12 +6,12 @@ describe("Routes: Tasks", () => {
     const jwtSecret = app.libs.config.jwtSecret
     let token
     
-    beforeEach(done => {
+    before(done => {
         Users
             .destroy({where: {}})
             .then(() => Users.create({
                 name: "John",
-                email: "john@email.net",
+                email: "john@mail.net",
                 password: "12345"
             }))
             .then(user => {
@@ -35,7 +35,7 @@ describe("Routes: Tasks", () => {
             it("returns a list of tasks", done => {
                 request.post("/token")
                     .send({
-                        email: "john@email.net",
+                        email: "john@mail.net",
                         password: "12345"
                     })
                     .end((err, res) => {
@@ -61,7 +61,7 @@ describe("Routes: Tasks", () => {
             it("create a new tasks", done => {
                 request.post("/token")
                     .send({
-                        email: "john@email.net",
+                        email: "john@mail.net",
                         password: "12345"
                     })
                     .end((err, res) => {
@@ -86,7 +86,7 @@ describe("Routes: Tasks", () => {
             it("return one tasks", done => {
                 request.post("/token")
                     .send({
-                        email: "john@email.net",
+                        email: "john@mail.net",
                         password: "12345"
                     })
                     .end((err, res) => {
@@ -107,7 +107,7 @@ describe("Routes: Tasks", () => {
             it("throws error when task not exists", done => {
                 request.post("/token")
                     .send({
-                        email: "john@email.net",
+                        email: "john@mail.net",
                         password: "12345"
                     })
                     .end((err, res) => {
@@ -127,7 +127,7 @@ describe("Routes: Tasks", () => {
             it("updates a task", done => {
                 request.post("/token")
                     .send({
-                        email: "john@email.net",
+                        email: "john@mail.net",
                         password: "12345"
                     })
                     .end((err, res) => {
@@ -151,7 +151,7 @@ describe("Routes: Tasks", () => {
             it("removes a task", done => {
                 request.post("/token")
                     .send({
-                        email: "john@email.net",
+                        email: "john@mail.net",
                         password: "12345"
                     })
                     .end((err, res) => {
