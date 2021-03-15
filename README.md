@@ -1,13 +1,13 @@
 # NTask-API
 
-Criação de uma API REST com Node.js e o framework web Express, para uma aplicação de gerencimanto de tarefas.
+Projeto criado a partir do livro "Construindo APIs REST com Node.js". Onde é criado uma API REST com `Node.js` e o framework web `Express`, para uma aplicação de gerencimanto de tarefas. A API foi implementada nas versões atuais dos frameworks, por isso está um pouco diferente do passo a passo do livro.
 
 ## Funcionalidades
 
 - Listagem das tarefas;
 - Consultar, cadastrar, excluir e alterar uma tarefa;
-- Consultar, cadastrar e excluir um usuário
-- Autenticação de usuário
+- Consultar, cadastrar e excluir um usuário;
+- Autenticação de usuário;
 - Página de documentação da API.
 
 ## Utilização
@@ -22,4 +22,12 @@ Em seu navegador, digite a seguinte url:
 
 ```
 http://localhost:3000
+```
+
+## Testes
+
+Foi criado os testes dos endpoints da API, utilizando o `mocha` com `chai` e `supertest`
+
+```
+npm test
 ```

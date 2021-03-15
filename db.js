@@ -28,7 +28,7 @@ module.exports = app => {
         })
         
         Object.keys(db.models).forEach(key => {
-            db.models[key].options.classMethods.associate(db.models)
+            db.models[key].associate(db.models)
         })
     }
 

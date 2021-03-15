@@ -35,16 +35,16 @@ module.exports = (sequelize, DataType) => {
                 const salt = bcrypt.genSaltSync()
                 user.password = bcrypt.hashSync(user.password, salt)
             }
-        },
-        classMethods: {
-            associate: (models) => {
-                Users.hasMany(models.Tasks)
-            },
-            isPassword: (encodedPassword, password) => {
-                return bcrypt.compareSync(password, encodedPassword)
-            }
         }
     })
+
+    Users.associate = (models) => {
+        Users.hasMany(models.Tasks)
+    }
+
+    Users.isPassword = (encodedPassword, password) => {
+        return bcrypt.compareSync(password, encodedPassword)
+    }
 
     return Users
 }

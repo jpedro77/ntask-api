@@ -7,7 +7,7 @@ module.exports = app => {
     const cfg = app.libs.config
 
     let opts = {}
-    opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken()
+    opts.jwtFromRequest = ExtractJwt.fromAuthHeaderWithScheme('JWT')
     opts.secretOrKey = cfg.jwtSecret
 
     const strategy = new JwtStrategy(opts, (payload, done) => {
