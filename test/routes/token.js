@@ -5,8 +5,8 @@ describe("Routes: Token", () => {
             Users
                 .destroy({where: {}})
                 .then(() => Users.create({
-                    name: "John",
-                    email: "john@mail.net",
+                    name: "John Peter",
+                    email: "johnpeter@mail.net",
                     password: "12345"
                 }))
                 .then(done())
@@ -16,7 +16,7 @@ describe("Routes: Token", () => {
             it("returns authenticated user token", done => {
                 request.post("/token")
                     .send({
-                        email: "john@mail.net",
+                        email: "johnpeter@mail.net",
                         password: "12345"
                     })
                     .expect(200)
@@ -31,7 +31,7 @@ describe("Routes: Token", () => {
             it("thows error when password is incorrect", done => {
                 request.post("/token")
                     .send({
-                        email: "john@mail.net",
+                        email: "johnpeter@mail.net",
                         password: "SENHA_ERRADA"
                     })
                     .expect(401)

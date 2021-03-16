@@ -9,8 +9,8 @@ describe("Routes: Users", () => {
         Users
             .destroy({where: {}})
             .then(() => Users.create({
-                name: "John",
-                email: "john@mail.net",
+                name: "John Peter",
+                email: "johnpeter@mail.net",
                 password: "12345"
             }))
             .then(done())
@@ -21,7 +21,7 @@ describe("Routes: Users", () => {
             it("returns an authenticated user", done => {
                 request.post("/token")
                     .send({
-                        email: "john@mail.net",
+                        email: "johnpeter@mail.net",
                         password: "12345"
                     })
                     .end((err, res) => {
@@ -32,8 +32,8 @@ describe("Routes: Users", () => {
                             .set("Authorization", `JWT ${token}`)
                             .expect(200)
                             .end((err, res) => {
-                                expect(res.body.name).to.eql("John")
-                                expect(res.body.email).to.eql("john@mail.net")
+                                expect(res.body.name).to.eql("John Peter")
+                                expect(res.body.email).to.eql("johnpeter@mail.net")
                                 done(err)
                             })
                     })
@@ -46,7 +46,7 @@ describe("Routes: Users", () => {
             it("deletes an authenticated user", done => {
                 request.post("/token")
                     .send({
-                        email: "john@mail.net",
+                        email: "johnpeter@mail.net",
                         password: "12345"
                     })
                     .end((err, res) => {
