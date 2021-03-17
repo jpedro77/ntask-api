@@ -10,6 +10,14 @@ Projeto criado a partir do livro "Construindo APIs REST com Node.js". Onde é cr
 - Autenticação de usuário;
 - Página de documentação da API.
 
+## Instalação
+
+Será necessário instalar os pacotes das dependências da API, através do `npm`.
+
+```
+npm i
+```
+
 ## Utilização
 
 Para utilizar e realizar alguns testes da API será necessário executar o comando `npm star`, que será responsável em compilar o código ES6 e iniciar o sistema na porta 3000, por meio do comando `babel-node index.js`.
@@ -26,8 +34,16 @@ http://localhost:3000
 
 ## Testes
 
-Foi criado os testes dos endpoints da API, utilizando o `mocha` com `chai` e `supertest`
+Foi criado os testes dos endpoints da API, utilizando o `mocha` com `chai` e `supertest`, para realizar os testes, execute o seguinte comando:
 
 ```
 npm test
+```
+
+## Documentação
+
+A API foi documentada com a ferramenta `apiDoc`, que é um módulo do `Node.js` que por comentários padronizados no código, ele gera uma documentação.
+
+```
+http://localhost:3000/apidoc
 ```

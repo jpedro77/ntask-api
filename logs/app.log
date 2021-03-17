@@ -1,0 +1,120 @@
+{"message":"[Tue Mar 16 2021 22:19:50 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password` VARCHAR(255) NOT NULL, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Tue Mar 16 2021 22:19:50 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Tue Mar 16 2021 22:19:50 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"[Tue Mar 16 2021 22:19:50 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `user_id` INTEGER REFERENCES `users` (`id`) ON DELETE SET NULL ON UPDATE CASCADE);","level":"info"}
+{"message":"[Tue Mar 16 2021 22:19:50 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/ HTTP/1.1\" 200 29292\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/vendor/prism.css HTTP/1.1\" 200 1957\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/vendor/bootstrap.min.css HTTP/1.1\" 200 121457\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/css/style.css HTTP/1.1\" 200 9773\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/vendor/polyfill.js HTTP/1.1\" 200 2900\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/vendor/require.min.js HTTP/1.1\" 200 15825\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/main.js HTTP/1.1\" 200 33190\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/vendor/jquery.min.js?v=1615944036679 HTTP/1.1\" 200 89476\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/vendor/lodash.custom.min.js?v=1615944036679 HTTP/1.1\" 200 20022\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/locales/locale.js?v=1615944036679 HTTP/1.1\" 200 1249\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/api_project.js?v=1615944036679 HTTP/1.1\" 200 339\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/utils/send_sample_request.js?v=1615944036679 HTTP/1.1\" 200 10211\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/vendor/semver.min.js?v=1615944036679 HTTP/1.1\" 200 12950\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/api_data.js?v=1615944036679 HTTP/1.1\" 200 20125\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/vendor/webfontloader.js?v=1615944036679 HTTP/1.1\" 200 12492\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/vendor/path-to-regexp/index.js?v=1615944036679 HTTP/1.1\" 200 5147\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/vendor/list.min.js?v=1615944036679 HTTP/1.1\" 200 15952\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/vendor/prism.js?v=1615944036679 HTTP/1.1\" 200 42163\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/vendor/handlebars.min.js?v=1615944036679 HTTP/1.1\" 200 80257\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/vendor/bootstrap.min.js?v=1615944036679 HTTP/1.1\" 200 39680\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/locales/ca.js?v=1615944036679 HTTP/1.1\" 200 1225\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/locales/cs.js?v=1615944036679 HTTP/1.1\" 200 1246\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/locales/de.js?v=1615944036679 HTTP/1.1\" 200 1234\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/locales/es.js?v=1615944036679 HTTP/1.1\" 200 1244\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/locales/fr.js?v=1615944036679 HTTP/1.1\" 200 1264\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/locales/it.js?v=1615944036679 HTTP/1.1\" 200 1249\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/locales/nl.js?v=1615944036679 HTTP/1.1\" 200 1241\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/locales/pl.js?v=1615944036679 HTTP/1.1\" 200 1226\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/locales/pt_br.js?v=1615944036679 HTTP/1.1\" 200 1236\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/locales/ro.js?v=1615944036679 HTTP/1.1\" 200 1238\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/locales/ru.js?v=1615944036679 HTTP/1.1\" 200 1481\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/locales/tr.js?v=1615944036679 HTTP/1.1\" 200 1246\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/locales/vi.js?v=1615944036679 HTTP/1.1\" 200 1328\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/locales/zh.js?v=1615944036679 HTTP/1.1\" 200 1157\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/locales/zh_cn.js?v=1615944036679 HTTP/1.1\" 200 1292\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/utils/send_sample_request_utils.js?v=1615944036679 HTTP/1.1\" 200 3356\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/utils/handlebars_helper.js?v=1615944036679 HTTP/1.1\" 200 10752\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:20:36 +0000] \"GET /apidoc/vendor/diff_match_patch.min.js?v=1615944036679 HTTP/1.1\" 200 19192\n","level":"info"}
+{"message":"[Tue Mar 16 2021 22:21:05 GMT-0300 (Horário Padrão de Brasília)] Executing (default): SELECT `id`, `name`, `email`, `password`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `Users` WHERE `Users`.`email` = 'johnpeter@mail.net';","level":"info"}
+{"message":"::1 - - [17/Mar/2021:01:21:05 +0000] \"POST /token HTTP/1.1\" 200 112\n","level":"info"}
+{"message":"[Tue Mar 16 2021 22:41:24 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password` VARCHAR(255) NOT NULL, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Tue Mar 16 2021 22:41:24 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Tue Mar 16 2021 22:41:24 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"[Tue Mar 16 2021 22:41:24 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `user_id` INTEGER REFERENCES `users` (`id`) ON DELETE SET NULL ON UPDATE CASCADE);","level":"info"}
+{"message":"[Tue Mar 16 2021 22:41:24 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"[Tue Mar 16 2021 22:41:24 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password` VARCHAR(255) NOT NULL, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Tue Mar 16 2021 22:41:24 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Tue Mar 16 2021 22:41:24 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"[Tue Mar 16 2021 22:41:24 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `user_id` INTEGER REFERENCES `users` (`id`) ON DELETE SET NULL ON UPDATE CASCADE);","level":"info"}
+{"message":"[Tue Mar 16 2021 22:41:24 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"[Tue Mar 16 2021 22:47:41 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password` VARCHAR(255) NOT NULL, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Tue Mar 16 2021 22:47:41 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Tue Mar 16 2021 22:47:41 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"[Tue Mar 16 2021 22:47:41 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `user_id` INTEGER REFERENCES `users` (`id`) ON DELETE SET NULL ON UPDATE CASCADE);","level":"info"}
+{"message":"[Tue Mar 16 2021 22:47:41 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"[Tue Mar 16 2021 22:47:41 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password` VARCHAR(255) NOT NULL, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Tue Mar 16 2021 22:47:41 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Tue Mar 16 2021 22:47:41 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"[Tue Mar 16 2021 22:47:41 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `user_id` INTEGER REFERENCES `users` (`id`) ON DELETE SET NULL ON UPDATE CASCADE);","level":"info"}
+{"message":"[Tue Mar 16 2021 22:47:41 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"[Tue Mar 16 2021 23:05:15 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password` VARCHAR(255) NOT NULL, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Tue Mar 16 2021 23:05:15 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Tue Mar 16 2021 23:05:15 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"[Tue Mar 16 2021 23:05:15 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `user_id` INTEGER REFERENCES `users` (`id`) ON DELETE SET NULL ON UPDATE CASCADE);","level":"info"}
+{"message":"[Tue Mar 16 2021 23:05:15 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"[Tue Mar 16 2021 23:05:15 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password` VARCHAR(255) NOT NULL, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Tue Mar 16 2021 23:05:15 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Tue Mar 16 2021 23:05:15 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"[Tue Mar 16 2021 23:05:15 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `user_id` INTEGER REFERENCES `users` (`id`) ON DELETE SET NULL ON UPDATE CASCADE);","level":"info"}
+{"message":"[Tue Mar 16 2021 23:05:15 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/ HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/vendor/bootstrap.min.css HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/css/style.css HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/vendor/require.min.js HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/vendor/prism.css HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/vendor/polyfill.js HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/vendor/polyfill.js HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/vendor/require.min.js HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/main.js HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/vendor/lodash.custom.min.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/vendor/jquery.min.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/api_data.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/api_project.js?v=1615946721399 HTTP/1.1\" 200 339\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/locales/locale.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/vendor/webfontloader.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/vendor/path-to-regexp/index.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/utils/send_sample_request.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/vendor/semver.min.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/vendor/list.min.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/vendor/prism.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/locales/ca.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/vendor/handlebars.min.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/locales/cs.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/locales/de.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/locales/es.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/locales/fr.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/locales/it.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/locales/nl.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/locales/pt_br.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/locales/ro.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/locales/pl.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/locales/ru.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/locales/tr.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/locales/vi.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/locales/zh.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/locales/zh_cn.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/utils/send_sample_request_utils.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/vendor/bootstrap.min.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/utils/handlebars_helper.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:21 +0000] \"GET /apidoc/vendor/diff_match_patch.min.js?v=1615946721399 HTTP/1.1\" 200 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:23 +0000] \"GET /apidoc/vendor/bootstrap.min.css HTTP/1.1\" 304 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:23 +0000] \"GET /apidoc/vendor/prism.css HTTP/1.1\" 304 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:23 +0000] \"GET /apidoc/css/style.css HTTP/1.1\" 304 -\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:05:24 +0000] \"GET /apidoc/vendor/bootstrap.min.css.map HTTP/1.1\" 404 174\n","level":"info"}
+{"message":"::1 - - [17/Mar/2021:02:06:53 +0000] \"GET / HTTP/1.1\" 304 -\n","level":"info"}
