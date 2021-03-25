@@ -3,3 +3,5 @@ ntask.sqlite
 ntask_test.sqlite
 logs/*.log
 public/apidoc
+cert.pem
+key.pem
