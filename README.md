@@ -20,7 +20,7 @@ npm install
 
 ## Utilização
 
-Para utilizar e realizar alguns testes da API será necessário executar o comando `npm star`, que será responsável em compilar o código ES6 e iniciar o sistema na porta 3000, por meio do comando `babel-node index.js`.
+Para utilizar e realizar alguns testes da API será necessário executar o comando `npm star`, que será responsável em compilar o código ES6 e iniciar o sistema na porta 3000 ou 3443(HTTPS), por meio do comando `babel-node index.js`.
 
 ```
 npm start
@@ -30,6 +30,9 @@ Em seu navegador, digite a seguinte url:
 
 ```
 http://localhost:3000
+```
+```
+https://localhost:3443
 ```
 
 ## Testes
@@ -46,4 +49,7 @@ A API foi documentada com a ferramenta `apiDoc`, que é um módulo do `Node.js` 
 
 ```
 http://localhost:3000/apidoc
+```
+```
+https://localhost:3443/apidoc
 ```
