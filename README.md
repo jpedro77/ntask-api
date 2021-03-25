@@ -15,7 +15,7 @@ Projeto criado a partir do livro "Construindo APIs REST com Node.js". Onde é cr
 Será necessário instalar os pacotes das dependências da API, através do `npm`.
 
 ```
-npm i
+npm install
 ```
 
 ## Utilização
