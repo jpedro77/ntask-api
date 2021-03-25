@@ -8,6 +8,7 @@ const logger = require("./logger")
 
 module.exports = app => {
     app.set("port", 3000)
+    app.set("port_ssl", 3443)
     app.set("json spaces", 4)
     app.use(morgan("common", {
         stream: {

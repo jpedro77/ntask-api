@@ -1,3 +1,4 @@
+const http = require("http")
 const https = require("https")
 const fs = require("fs")
 
@@ -11,9 +12,12 @@ module.exports = app => {
 
         app.db.sequelize.sync().then(() => {
             https.createServer(credentials, app)
-                .listen(app.get("port"), () => {
-                    console.log(`NTask API = porta ${app.get("port")}`)
+                .listen(app.get("port_ssl"), () => {
+                    console.log(`NTask API = porta ${app.get("port_ssl")}`)
                 })
+            http.createServer(app).listen(app.get("port"), () => {
+                console.log(`NTask API = porta ${app.get("port")}`)
+            })
         })
     }
 }
